@@ -12,9 +12,10 @@ public class AddressBook {
         buddies.remove(buddy);
     }
 
-
     public static void main(String[] args){
-        System.out.println("address Book");
-
+        BuddyInfo buddy = new BuddyInfo("Tom", "Carleton","613");
+        AddressBook buddies = new AddressBook();
+        buddies.addBuddy(buddy);
+        buddies.removeBuddy(buddy);
     }
 }
