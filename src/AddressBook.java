@@ -1,15 +1,23 @@
 import java.util.ArrayList;
 
 public class AddressBook {
-
+    //I am making changes to my code
     private ArrayList<BuddyInfo> buddies = new ArrayList<>();
+    
+    public AddressBook(){
+        buddies = new ArrayList<>();
+    }
 
     public void addBuddy(BuddyInfo buddy){
-        buddies.add(buddy);
+        if (buddy != null) {
+            buddies.add(buddy);
+        }
     }
 
     public void removeBuddy(BuddyInfo buddy){
-        buddies.remove(buddy);
+        if (buddy != null) {
+            buddies.remove(buddy);
+        }
     }
 
     public static void main(String[] args){
